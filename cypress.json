@@ -1,0 +1,13 @@
+{
+  "viewportHeight": 1080,
+  "viewportWidth": 1920,
+  "retries": {
+    "openMode": 2,
+    "runMode": 2
+  },
+  "video": false,
+  "reporter": "cypress-multi-reporters",
+  "reporterOptions": {
+    "configFile": "reporter-config.json"
+  }
+}

@@ -1,0 +1,2148 @@
+{
+  "stats": {
+    "suites": 12,
+    "tests": 56,
+    "passes": 56,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-06-21T11:04:31.036Z",
+    "end": "2021-06-21T12:56:48.435Z",
+    "duration": 212143,
+    "testsRegistered": 56,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "503bdf85-2703-4452-ae59-d61b32ed4ab6",
+      "title": "",
+      "fullFile": "cypress/integration/PDX_download.ts",
+      "file": "cypress/integration/PDX_download.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "71082a4e-6ea4-4af1-b043-f1b73853349a",
+          "title": "download check",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Page title",
+              "fullTitle": "download check Page title",
+              "timedOut": null,
+              "duration": 20404,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(pageHeader).to.equal('My Data Products');",
+              "err": {},
+              "uuid": "b6140d42-c7c2-4326-9e67-682cd945febd",
+              "parentUUID": "71082a4e-6ea4-4af1-b043-f1b73853349a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [
+            {
+              "uuid": "19791f24-bc06-46af-b888-4f9ce6d7b87f",
+              "title": "download",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "downloading a product",
+                  "fullTitle": "download check download downloading a product",
+                  "timedOut": null,
+                  "duration": 1334,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "expect(size).to.contain('9.72 MB');",
+                  "err": {},
+                  "uuid": "a771349c-e348-4805-ad93-31ae342e5b4d",
+                  "parentUUID": "19791f24-bc06-46af-b888-4f9ce6d7b87f",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "a771349c-e348-4805-ad93-31ae342e5b4d"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 1334,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [
+            "b6140d42-c7c2-4326-9e67-682cd945febd"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 20404,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "99d9d792-9c48-4aef-a4d9-262eb5b36528",
+      "title": "",
+      "fullFile": "cypress/integration/PDX_headerTest.spec.ts",
+      "file": "cypress/integration/PDX_headerTest.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8cad1aa3-f2b1-4db0-bc45-a8ccc3307689",
+          "title": "PDX Header verification - Data Admin user",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "66c92239-d839-481b-81a2-d8d5b6ed1402",
+              "title": "PDX Admin User - Brand logo",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Logo should be displayed ",
+                  "fullTitle": "PDX Header verification - Data Admin user PDX Admin User - Brand logo Logo should be displayed ",
+                  "timedOut": null,
+                  "duration": 16648,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "Header_1.headerMenu.brandLogo().should('be.visible');",
+                  "err": {},
+                  "uuid": "2e58e29c-97f1-4078-93e1-3040e29b0311",
+                  "parentUUID": "66c92239-d839-481b-81a2-d8d5b6ed1402",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "PDX logo should have valid href",
+                  "fullTitle": "PDX Header verification - Data Admin user PDX Admin User - Brand logo PDX logo should have valid href",
+                  "timedOut": null,
+                  "duration": 206,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "__awaiter(void 0, void 0, void 0, function* () {\n            Header_1.headerMenu.brandLogo().contains('href', 'www.precisely.com');\n        })",
+                  "err": {},
+                  "uuid": "ebeb0171-bfe2-4c08-bf1c-c48ac6f00c11",
+                  "parentUUID": "66c92239-d839-481b-81a2-d8d5b6ed1402",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "2e58e29c-97f1-4078-93e1-3040e29b0311",
+                "ebeb0171-bfe2-4c08-bf1c-c48ac6f00c11"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 16854,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "fd97c66a-8e4d-4671-b9d3-0354200884a0",
+              "title": "PDX Admin User - Brand name",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "PDX name should be displayed ",
+                  "fullTitle": "PDX Header verification - Data Admin user PDX Admin User - Brand name PDX name should be displayed ",
+                  "timedOut": null,
+                  "duration": 22,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "__awaiter(void 0, void 0, void 0, function* () {\n            Header_1.headerMenu.brandName().should('be.visible');\n        })",
+                  "err": {},
+                  "uuid": "ccd478ab-4227-44e5-8ada-eb331faff26e",
+                  "parentUUID": "fd97c66a-8e4d-4671-b9d3-0354200884a0",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "PDX name should have valid text",
+                  "fullTitle": "PDX Header verification - Data Admin user PDX Admin User - Brand name PDX name should have valid text",
+                  "timedOut": null,
+                  "duration": 47,
+                  "state": "passed",
+                  "speed": "medium",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "__awaiter(void 0, void 0, void 0, function* () {\n            Header_1.headerMenu.brandName().should('have.text', 'Data Experience');\n        })",
+                  "err": {},
+                  "uuid": "d9563e3f-266a-4479-8855-a53b2a6265b6",
+                  "parentUUID": "fd97c66a-8e4d-4671-b9d3-0354200884a0",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "ccd478ab-4227-44e5-8ada-eb331faff26e",
+                "d9563e3f-266a-4479-8855-a53b2a6265b6"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 69,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "7554ee7c-f87b-496d-a246-a4ddefdf65e6",
+              "title": "PDX Admin User - My Products",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "My products should be enabled ",
+                  "fullTitle": "PDX Header verification - Data Admin user PDX Admin User - My Products My products should be enabled ",
+                  "timedOut": null,
+                  "duration": 33,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "__awaiter(void 0, void 0, void 0, function* () {\n            Header_1.headerMenu.productsWithSubMenu().should('be.visible');\n        })",
+                  "err": {},
+                  "uuid": "c88cae0b-16d3-4f1c-94b0-87e7bc52772f",
+                  "parentUUID": "7554ee7c-f87b-496d-a246-a4ddefdf65e6",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Link Text displayed should be as My Products",
+                  "fullTitle": "PDX Header verification - Data Admin user PDX Admin User - My Products Link Text displayed should be as My Products",
+                  "timedOut": null,
+                  "duration": 72,
+                  "state": "passed",
+                  "speed": "medium",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "__awaiter(void 0, void 0, void 0, function* () {\n            Header_1.headerMenu.productsWithSubMenu().should('have.text', 'My Products');\n        })",
+                  "err": {},
+                  "uuid": "1bafb0a1-db0c-436b-8e1f-6f203f9f825f",
+                  "parentUUID": "7554ee7c-f87b-496d-a246-a4ddefdf65e6",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [
+                {
+                  "uuid": "c32afc08-ee15-4c35-9294-9653c22469a7",
+                  "title": "PDX Admin User - My Products Sub Menu",
+                  "fullFile": "",
+                  "file": "",
+                  "beforeHooks": [],
+                  "afterHooks": [],
+                  "tests": [
+                    {
+                      "title": "My Data Products should be enabled ",
+                      "fullTitle": "PDX Header verification - Data Admin user PDX Admin User - My Products PDX Admin User - My Products Sub Menu My Data Products should be enabled ",
+                      "timedOut": null,
+                      "duration": 353,
+                      "state": "passed",
+                      "speed": "slow",
+                      "pass": true,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "__awaiter(void 0, void 0, void 0, function* () {\n                Header_1.headerMenu.myProducts().should('be.visible');\n                Header_1.headerMenu.myProducts().should('have.text', 'My Data Products');\n            })",
+                      "err": {},
+                      "uuid": "0c9dc1c6-72b4-4022-8b3c-6e1e0955468e",
+                      "parentUUID": "c32afc08-ee15-4c35-9294-9653c22469a7",
+                      "isHook": false,
+                      "skipped": false
+                    },
+                    {
+                      "title": "My Software  Products should be enabled ",
+                      "fullTitle": "PDX Header verification - Data Admin user PDX Admin User - My Products PDX Admin User - My Products Sub Menu My Software  Products should be enabled ",
+                      "timedOut": null,
+                      "duration": 36,
+                      "state": "passed",
+                      "speed": "fast",
+                      "pass": true,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "__awaiter(void 0, void 0, void 0, function* () {\n                Header_1.headerMenu.mySoftwareProducts().should('be.visible');\n                Header_1.headerMenu.mySoftwareProducts().should('have.text', 'My Software Products');\n            })",
+                      "err": {},
+                      "uuid": "20eae10b-9d2a-4136-ad3b-a26c69979075",
+                      "parentUUID": "c32afc08-ee15-4c35-9294-9653c22469a7",
+                      "isHook": false,
+                      "skipped": false
+                    }
+                  ],
+                  "suites": [],
+                  "passes": [
+                    "0c9dc1c6-72b4-4022-8b3c-6e1e0955468e",
+                    "20eae10b-9d2a-4136-ad3b-a26c69979075"
+                  ],
+                  "failures": [],
+                  "pending": [],
+                  "skipped": [],
+                  "duration": 389,
+                  "root": false,
+                  "rootEmpty": false,
+                  "_timeout": 2000
+                }
+              ],
+              "passes": [
+                "c88cae0b-16d3-4f1c-94b0-87e7bc52772f",
+                "1bafb0a1-db0c-436b-8e1f-6f203f9f825f"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 105,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "94f6a676-f059-4392-98dd-5769e4fe99f7",
+              "title": "PDX Admin User - Samples",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Samples should be enabled",
+                  "fullTitle": "PDX Header verification - Data Admin user PDX Admin User - Samples Samples should be enabled",
+                  "timedOut": null,
+                  "duration": 29,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "__awaiter(void 0, void 0, void 0, function* () {\n            Header_1.headerMenu.samples().should('be.visible');\n        })",
+                  "err": {},
+                  "uuid": "61352e98-fd3d-44ad-9ca5-58d27f8ab3fa",
+                  "parentUUID": "94f6a676-f059-4392-98dd-5769e4fe99f7",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Link Text displayed should be as Sample Datasets",
+                  "fullTitle": "PDX Header verification - Data Admin user PDX Admin User - Samples Link Text displayed should be as Sample Datasets",
+                  "timedOut": null,
+                  "duration": 19,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "__awaiter(void 0, void 0, void 0, function* () {\n            Header_1.headerMenu.samples().should('have.text', 'Sample Datasets');\n        })",
+                  "err": {},
+                  "uuid": "2b2d95fa-4508-4996-8f3e-aabaa8a52391",
+                  "parentUUID": "94f6a676-f059-4392-98dd-5769e4fe99f7",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [
+                {
+                  "uuid": "845c4ba7-c9f6-4aad-abe6-b766a29cff95",
+                  "title": "Navigation to Samples",
+                  "fullFile": "",
+                  "file": "",
+                  "beforeHooks": [],
+                  "afterHooks": [],
+                  "tests": [
+                    {
+                      "title": "Samples page should be displayed",
+                      "fullTitle": "PDX Header verification - Data Admin user PDX Admin User - Samples Navigation to Samples Samples page should be displayed",
+                      "timedOut": null,
+                      "duration": 136,
+                      "state": "passed",
+                      "speed": "slow",
+                      "pass": true,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "__awaiter(void 0, void 0, void 0, function* () {\n                cy.get('pageHeader').should('have.text', 'Sample Datasets');\n            })",
+                      "err": {},
+                      "uuid": "560675ca-cc88-4b50-b276-3078a8e228cf",
+                      "parentUUID": "845c4ba7-c9f6-4aad-abe6-b766a29cff95",
+                      "isHook": false,
+                      "skipped": false
+                    }
+                  ],
+                  "suites": [],
+                  "passes": [
+                    "560675ca-cc88-4b50-b276-3078a8e228cf"
+                  ],
+                  "failures": [],
+                  "pending": [],
+                  "skipped": [],
+                  "duration": 136,
+                  "root": false,
+                  "rootEmpty": false,
+                  "_timeout": 2000
+                }
+              ],
+              "passes": [
+                "61352e98-fd3d-44ad-9ca5-58d27f8ab3fa",
+                "2b2d95fa-4508-4996-8f3e-aabaa8a52391"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 48,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "5339875a-ce04-44c8-be1c-e5efaf3221dd",
+      "title": "",
+      "fullFile": "cypress/integration/PDX_Alogin.ts",
+      "file": "cypress/integration/PDX_Alogin.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "25aa562b-c295-4688-97c2-2edb725bd187",
+          "title": "template",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should ",
+              "fullTitle": "template should ",
+              "timedOut": null,
+              "duration": 11281,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect('test').to.equal('test');",
+              "err": {},
+              "uuid": "c0e3c8a5-1d03-4330-9429-9a0f9b500707",
+              "parentUUID": "25aa562b-c295-4688-97c2-2edb725bd187",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c0e3c8a5-1d03-4330-9429-9a0f9b500707"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 11281,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "fcca6534-8d0a-406d-88e4-a8c1ba59445b",
+      "title": "",
+      "fullFile": "cypress/integration/PDX_download.ts",
+      "file": "cypress/integration/PDX_download.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "aeb21576-21c5-41d0-bbab-e6f035b1733f",
+          "title": "download check",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Page title",
+              "fullTitle": "download check Page title",
+              "timedOut": null,
+              "duration": 18313,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(pageHeader).to.equal('My Data Products');",
+              "err": {},
+              "uuid": "43c91b1a-28e5-4eb1-a42a-231781f36f87",
+              "parentUUID": "aeb21576-21c5-41d0-bbab-e6f035b1733f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [
+            {
+              "uuid": "9b0bf68e-8073-49f6-ac32-7eec2070a717",
+              "title": "download",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "downloading a product",
+                  "fullTitle": "download check download downloading a product",
+                  "timedOut": null,
+                  "duration": 1606,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "expect(size).to.contain('9.72 MB');",
+                  "err": {},
+                  "uuid": "0b1d3254-9bc6-40d5-9b88-8786013ca3ba",
+                  "parentUUID": "9b0bf68e-8073-49f6-ac32-7eec2070a717",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "0b1d3254-9bc6-40d5-9b88-8786013ca3ba"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 1606,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [
+            "43c91b1a-28e5-4eb1-a42a-231781f36f87"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 18313,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "8d6bc917-b7c6-4841-9b50-fcb70f70df28",
+      "title": "",
+      "fullFile": "cypress/integration/PDX_headerTest.spec.ts",
+      "file": "cypress/integration/PDX_headerTest.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1b0bc85d-f5ac-46a9-963c-7c4f940e9032",
+          "title": "PDX Header verification - Data Admin user",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "205bc658-e394-4667-9ada-32774983d779",
+              "title": "PDX Admin User - Brand logo",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Logo should be displayed ",
+                  "fullTitle": "PDX Header verification - Data Admin user PDX Admin User - Brand logo Logo should be displayed ",
+                  "timedOut": null,
+                  "duration": 17682,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "Header_1.headerMenu.brandLogo().should('be.visible');",
+                  "err": {},
+                  "uuid": "7a038373-44d4-4e95-a7ec-6909a1ee4941",
+                  "parentUUID": "205bc658-e394-4667-9ada-32774983d779",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "PDX logo should have valid href",
+                  "fullTitle": "PDX Header verification - Data Admin user PDX Admin User - Brand logo PDX logo should have valid href",
+                  "timedOut": null,
+                  "duration": 514,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "__awaiter(void 0, void 0, void 0, function* () {\n            Header_1.headerMenu.brandLogo().contains('href', 'www.precisely.com');\n        })",
+                  "err": {},
+                  "uuid": "90af88f0-ba61-4a27-b65b-a64685ce3419",
+                  "parentUUID": "205bc658-e394-4667-9ada-32774983d779",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "7a038373-44d4-4e95-a7ec-6909a1ee4941",
+                "90af88f0-ba61-4a27-b65b-a64685ce3419"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 18196,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "794c71d1-b46f-40f2-99c8-5c1d112e33da",
+              "title": "PDX Admin User - Brand name",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "PDX name should be displayed ",
+                  "fullTitle": "PDX Header verification - Data Admin user PDX Admin User - Brand name PDX name should be displayed ",
+                  "timedOut": null,
+                  "duration": 116,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "__awaiter(void 0, void 0, void 0, function* () {\n            Header_1.headerMenu.brandName().should('be.visible');\n        })",
+                  "err": {},
+                  "uuid": "722b44d6-2746-4a7e-9d03-ca27c40728d5",
+                  "parentUUID": "794c71d1-b46f-40f2-99c8-5c1d112e33da",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "PDX name should have valid text",
+                  "fullTitle": "PDX Header verification - Data Admin user PDX Admin User - Brand name PDX name should have valid text",
+                  "timedOut": null,
+                  "duration": 49,
+                  "state": "passed",
+                  "speed": "medium",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "__awaiter(void 0, void 0, void 0, function* () {\n            Header_1.headerMenu.brandName().should('have.text', 'Data Experience');\n        })",
+                  "err": {},
+                  "uuid": "c0ce856f-d2d0-4813-85c7-64f6f1b30190",
+                  "parentUUID": "794c71d1-b46f-40f2-99c8-5c1d112e33da",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "722b44d6-2746-4a7e-9d03-ca27c40728d5",
+                "c0ce856f-d2d0-4813-85c7-64f6f1b30190"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 165,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "af492868-5480-4456-81ac-230f7859ebe7",
+              "title": "PDX Admin User - My Products",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "My products should be enabled ",
+                  "fullTitle": "PDX Header verification - Data Admin user PDX Admin User - My Products My products should be enabled ",
+                  "timedOut": null,
+                  "duration": 68,
+                  "state": "passed",
+                  "speed": "medium",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "__awaiter(void 0, void 0, void 0, function* () {\n            Header_1.headerMenu.productsWithSubMenu().should('be.visible');\n        })",
+                  "err": {},
+                  "uuid": "9492e770-96ee-47ea-b785-5eaca084afe8",
+                  "parentUUID": "af492868-5480-4456-81ac-230f7859ebe7",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Link Text displayed should be as My Products",
+                  "fullTitle": "PDX Header verification - Data Admin user PDX Admin User - My Products Link Text displayed should be as My Products",
+                  "timedOut": null,
+                  "duration": 54,
+                  "state": "passed",
+                  "speed": "medium",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "__awaiter(void 0, void 0, void 0, function* () {\n            Header_1.headerMenu.productsWithSubMenu().should('have.text', 'My Products');\n        })",
+                  "err": {},
+                  "uuid": "b0e9ad23-fdc8-4ebb-8d14-1f5f915140c9",
+                  "parentUUID": "af492868-5480-4456-81ac-230f7859ebe7",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [
+                {
+                  "uuid": "1584c3dc-4da6-415f-8e87-7e4d50e3b785",
+                  "title": "PDX Admin User - My Products Sub Menu",
+                  "fullFile": "",
+                  "file": "",
+                  "beforeHooks": [],
+                  "afterHooks": [],
+                  "tests": [
+                    {
+                      "title": "My Data Products should be enabled ",
+                      "fullTitle": "PDX Header verification - Data Admin user PDX Admin User - My Products PDX Admin User - My Products Sub Menu My Data Products should be enabled ",
+                      "timedOut": null,
+                      "duration": 268,
+                      "state": "passed",
+                      "speed": "slow",
+                      "pass": true,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "__awaiter(void 0, void 0, void 0, function* () {\n                Header_1.headerMenu.myProducts().should('be.visible');\n                Header_1.headerMenu.myProducts().should('have.text', 'My Data Products');\n            })",
+                      "err": {},
+                      "uuid": "192e22ce-120a-492a-b457-c25ab001368e",
+                      "parentUUID": "1584c3dc-4da6-415f-8e87-7e4d50e3b785",
+                      "isHook": false,
+                      "skipped": false
+                    },
+                    {
+                      "title": "My Software  Products should be enabled ",
+                      "fullTitle": "PDX Header verification - Data Admin user PDX Admin User - My Products PDX Admin User - My Products Sub Menu My Software  Products should be enabled ",
+                      "timedOut": null,
+                      "duration": 77,
+                      "state": "passed",
+                      "speed": "slow",
+                      "pass": true,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "__awaiter(void 0, void 0, void 0, function* () {\n                Header_1.headerMenu.mySoftwareProducts().should('be.visible');\n                Header_1.headerMenu.mySoftwareProducts().should('have.text', 'My Software Products');\n            })",
+                      "err": {},
+                      "uuid": "43f19069-1ab0-40e6-9422-a7f41855ba46",
+                      "parentUUID": "1584c3dc-4da6-415f-8e87-7e4d50e3b785",
+                      "isHook": false,
+                      "skipped": false
+                    }
+                  ],
+                  "suites": [],
+                  "passes": [
+                    "192e22ce-120a-492a-b457-c25ab001368e",
+                    "43f19069-1ab0-40e6-9422-a7f41855ba46"
+                  ],
+                  "failures": [],
+                  "pending": [],
+                  "skipped": [],
+                  "duration": 345,
+                  "root": false,
+                  "rootEmpty": false,
+                  "_timeout": 2000
+                }
+              ],
+              "passes": [
+                "9492e770-96ee-47ea-b785-5eaca084afe8",
+                "b0e9ad23-fdc8-4ebb-8d14-1f5f915140c9"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 122,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "eef01ecd-0bdf-406a-a74d-95f378074329",
+              "title": "PDX Admin User - Samples",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Samples should be enabled",
+                  "fullTitle": "PDX Header verification - Data Admin user PDX Admin User - Samples Samples should be enabled",
+                  "timedOut": null,
+                  "duration": 96,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "__awaiter(void 0, void 0, void 0, function* () {\n            Header_1.headerMenu.samples().should('be.visible');\n        })",
+                  "err": {},
+                  "uuid": "3f75fd99-53c1-463b-8dc3-9577346d260b",
+                  "parentUUID": "eef01ecd-0bdf-406a-a74d-95f378074329",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Link Text displayed should be as Sample Datasets",
+                  "fullTitle": "PDX Header verification - Data Admin user PDX Admin User - Samples Link Text displayed should be as Sample Datasets",
+                  "timedOut": null,
+                  "duration": 64,
+                  "state": "passed",
+                  "speed": "medium",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "__awaiter(void 0, void 0, void 0, function* () {\n            Header_1.headerMenu.samples().should('have.text', 'Sample Datasets');\n        })",
+                  "err": {},
+                  "uuid": "55c92d19-a5ad-4e64-ad54-c580f55a7f8a",
+                  "parentUUID": "eef01ecd-0bdf-406a-a74d-95f378074329",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [
+                {
+                  "uuid": "e9e914ac-a393-40eb-a972-1d538488afec",
+                  "title": "Navigation to Samples",
+                  "fullFile": "",
+                  "file": "",
+                  "beforeHooks": [],
+                  "afterHooks": [],
+                  "tests": [
+                    {
+                      "title": "Samples page should be displayed",
+                      "fullTitle": "PDX Header verification - Data Admin user PDX Admin User - Samples Navigation to Samples Samples page should be displayed",
+                      "timedOut": null,
+                      "duration": 273,
+                      "state": "passed",
+                      "speed": "slow",
+                      "pass": true,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "__awaiter(void 0, void 0, void 0, function* () {\n                cy.get('pageHeader').should('have.text', 'Sample Datasets');\n            })",
+                      "err": {},
+                      "uuid": "841e7b0d-22fa-446d-8123-4c84be5a9137",
+                      "parentUUID": "e9e914ac-a393-40eb-a972-1d538488afec",
+                      "isHook": false,
+                      "skipped": false
+                    }
+                  ],
+                  "suites": [],
+                  "passes": [
+                    "841e7b0d-22fa-446d-8123-4c84be5a9137"
+                  ],
+                  "failures": [],
+                  "pending": [],
+                  "skipped": [],
+                  "duration": 273,
+                  "root": false,
+                  "rootEmpty": false,
+                  "_timeout": 2000
+                }
+              ],
+              "passes": [
+                "3f75fd99-53c1-463b-8dc3-9577346d260b",
+                "55c92d19-a5ad-4e64-ad54-c580f55a7f8a"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 160,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "91cfe4dd-e370-41e4-a9d3-34311e50ce36",
+      "title": "",
+      "fullFile": "cypress/integration/PDX_Alogin.ts",
+      "file": "cypress/integration/PDX_Alogin.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "99f4e206-4ecb-45ec-a2c3-dc67406a3121",
+          "title": "template",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should ",
+              "fullTitle": "template should ",
+              "timedOut": null,
+              "duration": 13191,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect('test').to.equal('test');",
+              "err": {},
+              "uuid": "96efe973-3722-4d32-8580-3e0c1fef1a21",
+              "parentUUID": "99f4e206-4ecb-45ec-a2c3-dc67406a3121",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "96efe973-3722-4d32-8580-3e0c1fef1a21"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 13191,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "30b3fc4e-702c-46d4-9c5d-d742204fe583",
+      "title": "",
+      "fullFile": "cypress/integration/PDX_download.ts",
+      "file": "cypress/integration/PDX_download.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6908fd1d-9afe-4c9f-99f2-1b8f0761c33a",
+          "title": "download check",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Page title",
+              "fullTitle": "download check Page title",
+              "timedOut": null,
+              "duration": 22241,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(pageHeader).to.equal('My Data Products');",
+              "err": {},
+              "uuid": "fc5cbe04-710e-4588-8cbf-6464ab9f26ce",
+              "parentUUID": "6908fd1d-9afe-4c9f-99f2-1b8f0761c33a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [
+            {
+              "uuid": "789c8efc-a165-4439-8fc6-11dc4938ffbd",
+              "title": "download",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "downloading a product",
+                  "fullTitle": "download check download downloading a product",
+                  "timedOut": null,
+                  "duration": 1316,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "expect(size).to.contain('9.72 MB');",
+                  "err": {},
+                  "uuid": "9e1cbeda-022c-43ee-9a33-2b09a0b40bc8",
+                  "parentUUID": "789c8efc-a165-4439-8fc6-11dc4938ffbd",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "9e1cbeda-022c-43ee-9a33-2b09a0b40bc8"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 1316,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [
+            "fc5cbe04-710e-4588-8cbf-6464ab9f26ce"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 22241,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "55dc5101-a571-4384-877b-b401e6f37647",
+      "title": "",
+      "fullFile": "cypress/integration/PDX_headerTest.spec.ts",
+      "file": "cypress/integration/PDX_headerTest.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "25fb0bf1-4904-4e76-8033-db5af4080dbd",
+          "title": "PDX Header verification - Data Admin user",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "3f04747f-be6b-459a-8887-0b8c9e7442a8",
+              "title": "PDX Admin User - Brand logo",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Logo should be displayed ",
+                  "fullTitle": "PDX Header verification - Data Admin user PDX Admin User - Brand logo Logo should be displayed ",
+                  "timedOut": null,
+                  "duration": 16579,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "Header_1.headerMenu.brandLogo().should('be.visible');",
+                  "err": {},
+                  "uuid": "cfd2a8df-9ad1-401b-9d68-1e4207a46df9",
+                  "parentUUID": "3f04747f-be6b-459a-8887-0b8c9e7442a8",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "PDX logo should have valid href",
+                  "fullTitle": "PDX Header verification - Data Admin user PDX Admin User - Brand logo PDX logo should have valid href",
+                  "timedOut": null,
+                  "duration": 262,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "__awaiter(void 0, void 0, void 0, function* () {\n            Header_1.headerMenu.brandLogo().contains('href', 'www.precisely.com');\n        })",
+                  "err": {},
+                  "uuid": "737fcac4-835d-4a5d-93a6-5e2c036332ac",
+                  "parentUUID": "3f04747f-be6b-459a-8887-0b8c9e7442a8",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "cfd2a8df-9ad1-401b-9d68-1e4207a46df9",
+                "737fcac4-835d-4a5d-93a6-5e2c036332ac"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 16841,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "04d36e5f-1d6b-4aa3-9bb5-966c93c5a0f4",
+              "title": "PDX Admin User - Brand name",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "PDX name should be displayed ",
+                  "fullTitle": "PDX Header verification - Data Admin user PDX Admin User - Brand name PDX name should be displayed ",
+                  "timedOut": null,
+                  "duration": 94,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "__awaiter(void 0, void 0, void 0, function* () {\n            Header_1.headerMenu.brandName().should('be.visible');\n        })",
+                  "err": {},
+                  "uuid": "93cba1d7-fa29-471c-975a-31652ad96ef0",
+                  "parentUUID": "04d36e5f-1d6b-4aa3-9bb5-966c93c5a0f4",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "PDX name should have valid text",
+                  "fullTitle": "PDX Header verification - Data Admin user PDX Admin User - Brand name PDX name should have valid text",
+                  "timedOut": null,
+                  "duration": 137,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "__awaiter(void 0, void 0, void 0, function* () {\n            Header_1.headerMenu.brandName().should('have.text', 'Data Experience');\n        })",
+                  "err": {},
+                  "uuid": "c6fe1743-182e-45c0-8423-039bf6a1121a",
+                  "parentUUID": "04d36e5f-1d6b-4aa3-9bb5-966c93c5a0f4",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "93cba1d7-fa29-471c-975a-31652ad96ef0",
+                "c6fe1743-182e-45c0-8423-039bf6a1121a"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 231,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "716d5c8f-13e2-4b49-9b71-a28c0a00fb9a",
+              "title": "PDX Admin User - My Products",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "My products should be enabled ",
+                  "fullTitle": "PDX Header verification - Data Admin user PDX Admin User - My Products My products should be enabled ",
+                  "timedOut": null,
+                  "duration": 47,
+                  "state": "passed",
+                  "speed": "medium",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "__awaiter(void 0, void 0, void 0, function* () {\n            Header_1.headerMenu.productsWithSubMenu().should('be.visible');\n        })",
+                  "err": {},
+                  "uuid": "ca848546-5c51-4a6c-99eb-c716a5a486a6",
+                  "parentUUID": "716d5c8f-13e2-4b49-9b71-a28c0a00fb9a",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Link Text displayed should be as My Products",
+                  "fullTitle": "PDX Header verification - Data Admin user PDX Admin User - My Products Link Text displayed should be as My Products",
+                  "timedOut": null,
+                  "duration": 66,
+                  "state": "passed",
+                  "speed": "medium",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "__awaiter(void 0, void 0, void 0, function* () {\n            Header_1.headerMenu.productsWithSubMenu().should('have.text', 'My Products');\n        })",
+                  "err": {},
+                  "uuid": "591b3b8f-c53f-4547-ac60-8c6e3820904d",
+                  "parentUUID": "716d5c8f-13e2-4b49-9b71-a28c0a00fb9a",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [
+                {
+                  "uuid": "5d27cef9-f93c-4baf-b97b-e55cc2b91a6e",
+                  "title": "PDX Admin User - My Products Sub Menu",
+                  "fullFile": "",
+                  "file": "",
+                  "beforeHooks": [],
+                  "afterHooks": [],
+                  "tests": [
+                    {
+                      "title": "My Data Products should be enabled ",
+                      "fullTitle": "PDX Header verification - Data Admin user PDX Admin User - My Products PDX Admin User - My Products Sub Menu My Data Products should be enabled ",
+                      "timedOut": null,
+                      "duration": 249,
+                      "state": "passed",
+                      "speed": "slow",
+                      "pass": true,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "__awaiter(void 0, void 0, void 0, function* () {\n                Header_1.headerMenu.myProducts().should('be.visible');\n                Header_1.headerMenu.myProducts().should('have.text', 'My Data Products');\n            })",
+                      "err": {},
+                      "uuid": "05cdf97c-492f-4506-98c4-ca115f32df22",
+                      "parentUUID": "5d27cef9-f93c-4baf-b97b-e55cc2b91a6e",
+                      "isHook": false,
+                      "skipped": false
+                    },
+                    {
+                      "title": "My Software  Products should be enabled ",
+                      "fullTitle": "PDX Header verification - Data Admin user PDX Admin User - My Products PDX Admin User - My Products Sub Menu My Software  Products should be enabled ",
+                      "timedOut": null,
+                      "duration": 23,
+                      "state": "passed",
+                      "speed": "fast",
+                      "pass": true,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "__awaiter(void 0, void 0, void 0, function* () {\n                Header_1.headerMenu.mySoftwareProducts().should('be.visible');\n                Header_1.headerMenu.mySoftwareProducts().should('have.text', 'My Software Products');\n            })",
+                      "err": {},
+                      "uuid": "e711d24c-eb60-4c00-a46b-3cbf66fe7de5",
+                      "parentUUID": "5d27cef9-f93c-4baf-b97b-e55cc2b91a6e",
+                      "isHook": false,
+                      "skipped": false
+                    }
+                  ],
+                  "suites": [],
+                  "passes": [
+                    "05cdf97c-492f-4506-98c4-ca115f32df22",
+                    "e711d24c-eb60-4c00-a46b-3cbf66fe7de5"
+                  ],
+                  "failures": [],
+                  "pending": [],
+                  "skipped": [],
+                  "duration": 272,
+                  "root": false,
+                  "rootEmpty": false,
+                  "_timeout": 2000
+                }
+              ],
+              "passes": [
+                "ca848546-5c51-4a6c-99eb-c716a5a486a6",
+                "591b3b8f-c53f-4547-ac60-8c6e3820904d"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 113,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "3f9a142b-c793-4f7f-970f-ad674a3edb73",
+              "title": "PDX Admin User - Samples",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Samples should be enabled",
+                  "fullTitle": "PDX Header verification - Data Admin user PDX Admin User - Samples Samples should be enabled",
+                  "timedOut": null,
+                  "duration": 49,
+                  "state": "passed",
+                  "speed": "medium",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "__awaiter(void 0, void 0, void 0, function* () {\n            Header_1.headerMenu.samples().should('be.visible');\n        })",
+                  "err": {},
+                  "uuid": "30968359-9adc-413d-9a68-7d0d1230d236",
+                  "parentUUID": "3f9a142b-c793-4f7f-970f-ad674a3edb73",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Link Text displayed should be as Sample Datasets",
+                  "fullTitle": "PDX Header verification - Data Admin user PDX Admin User - Samples Link Text displayed should be as Sample Datasets",
+                  "timedOut": null,
+                  "duration": 66,
+                  "state": "passed",
+                  "speed": "medium",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "__awaiter(void 0, void 0, void 0, function* () {\n            Header_1.headerMenu.samples().should('have.text', 'Sample Datasets');\n        })",
+                  "err": {},
+                  "uuid": "6697be09-6edf-421c-8d79-1164e86231b1",
+                  "parentUUID": "3f9a142b-c793-4f7f-970f-ad674a3edb73",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [
+                {
+                  "uuid": "ec829ac6-1867-4a2d-9c4a-a493851f4271",
+                  "title": "Navigation to Samples",
+                  "fullFile": "",
+                  "file": "",
+                  "beforeHooks": [],
+                  "afterHooks": [],
+                  "tests": [
+                    {
+                      "title": "Samples page should be displayed",
+                      "fullTitle": "PDX Header verification - Data Admin user PDX Admin User - Samples Navigation to Samples Samples page should be displayed",
+                      "timedOut": null,
+                      "duration": 433,
+                      "state": "passed",
+                      "speed": "slow",
+                      "pass": true,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "__awaiter(void 0, void 0, void 0, function* () {\n                cy.get('pageHeader').should('have.text', 'Sample Datasets');\n            })",
+                      "err": {},
+                      "uuid": "93c3ff73-a4f0-4f33-a6af-0e2daad7321d",
+                      "parentUUID": "ec829ac6-1867-4a2d-9c4a-a493851f4271",
+                      "isHook": false,
+                      "skipped": false
+                    }
+                  ],
+                  "suites": [],
+                  "passes": [
+                    "93c3ff73-a4f0-4f33-a6af-0e2daad7321d"
+                  ],
+                  "failures": [],
+                  "pending": [],
+                  "skipped": [],
+                  "duration": 433,
+                  "root": false,
+                  "rootEmpty": false,
+                  "_timeout": 2000
+                }
+              ],
+              "passes": [
+                "30968359-9adc-413d-9a68-7d0d1230d236",
+                "6697be09-6edf-421c-8d79-1164e86231b1"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 115,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "c5b11f4e-0570-4939-828f-9d172a887f0b",
+      "title": "",
+      "fullFile": "cypress/integration/PDX_Alogin.ts",
+      "file": "cypress/integration/PDX_Alogin.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "73fad4a8-a4d7-4c0f-ac20-f5471114568f",
+          "title": "template",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should ",
+              "fullTitle": "template should ",
+              "timedOut": null,
+              "duration": 15843,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect('test').to.equal('test');",
+              "err": {},
+              "uuid": "d11bc19b-9fb3-4861-9afc-caf9d985d212",
+              "parentUUID": "73fad4a8-a4d7-4c0f-ac20-f5471114568f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d11bc19b-9fb3-4861-9afc-caf9d985d212"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 15843,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "d2c35bd3-7a2b-48cf-8d24-9a6c1e3445a4",
+      "title": "",
+      "fullFile": "cypress/integration/PDX_download.ts",
+      "file": "cypress/integration/PDX_download.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5a91807c-6ff1-4564-90d3-b525c287bcc2",
+          "title": "download check",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Page title",
+              "fullTitle": "download check Page title",
+              "timedOut": null,
+              "duration": 20878,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(pageHeader).to.equal('My Data Products');",
+              "err": {},
+              "uuid": "56ae364c-4ac2-44d2-b82f-355b2a4b7d59",
+              "parentUUID": "5a91807c-6ff1-4564-90d3-b525c287bcc2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [
+            {
+              "uuid": "a45c75b1-f87e-49cb-b313-d7bf49d7eab7",
+              "title": "download",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "downloading a product",
+                  "fullTitle": "download check download downloading a product",
+                  "timedOut": null,
+                  "duration": 1295,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "expect(size).to.contain('9.72 MB');",
+                  "err": {},
+                  "uuid": "124fceae-ec20-43d2-9ac6-453638bdc390",
+                  "parentUUID": "a45c75b1-f87e-49cb-b313-d7bf49d7eab7",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "124fceae-ec20-43d2-9ac6-453638bdc390"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 1295,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [
+            "56ae364c-4ac2-44d2-b82f-355b2a4b7d59"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 20878,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "1d3e58e4-0d6e-4c62-a413-e6a0606bf90c",
+      "title": "",
+      "fullFile": "cypress/integration/PDX_headerTest.spec.ts",
+      "file": "cypress/integration/PDX_headerTest.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2e695663-dd75-4368-889e-3c65e2c4f52d",
+          "title": "PDX Header verification - Data Admin user",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "98fe7374-71e9-4200-91b9-507fdaf2e3a7",
+              "title": "PDX Admin User - Brand logo",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Logo should be displayed ",
+                  "fullTitle": "PDX Header verification - Data Admin user PDX Admin User - Brand logo Logo should be displayed ",
+                  "timedOut": null,
+                  "duration": 16747,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "Header_1.headerMenu.brandLogo().should('be.visible');",
+                  "err": {},
+                  "uuid": "d0521e43-317e-4f5c-9b9d-0e9465ac6469",
+                  "parentUUID": "98fe7374-71e9-4200-91b9-507fdaf2e3a7",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "PDX logo should have valid href",
+                  "fullTitle": "PDX Header verification - Data Admin user PDX Admin User - Brand logo PDX logo should have valid href",
+                  "timedOut": null,
+                  "duration": 160,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "__awaiter(void 0, void 0, void 0, function* () {\n            Header_1.headerMenu.brandLogo().contains('href', 'www.precisely.com');\n        })",
+                  "err": {},
+                  "uuid": "ea97b0a4-6218-4e74-8a78-60f8cdb878db",
+                  "parentUUID": "98fe7374-71e9-4200-91b9-507fdaf2e3a7",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "d0521e43-317e-4f5c-9b9d-0e9465ac6469",
+                "ea97b0a4-6218-4e74-8a78-60f8cdb878db"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 16907,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "d30c8ad2-7aa8-486c-a6bc-079724d2f76c",
+              "title": "PDX Admin User - Brand name",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "PDX name should be displayed ",
+                  "fullTitle": "PDX Header verification - Data Admin user PDX Admin User - Brand name PDX name should be displayed ",
+                  "timedOut": null,
+                  "duration": 18,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "__awaiter(void 0, void 0, void 0, function* () {\n            Header_1.headerMenu.brandName().should('be.visible');\n        })",
+                  "err": {},
+                  "uuid": "d50a244d-c85d-4dbc-982b-5fe960fc0f05",
+                  "parentUUID": "d30c8ad2-7aa8-486c-a6bc-079724d2f76c",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "PDX name should have valid text",
+                  "fullTitle": "PDX Header verification - Data Admin user PDX Admin User - Brand name PDX name should have valid text",
+                  "timedOut": null,
+                  "duration": 15,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "__awaiter(void 0, void 0, void 0, function* () {\n            Header_1.headerMenu.brandName().should('have.text', 'Data Experience');\n        })",
+                  "err": {},
+                  "uuid": "1d39ec2d-56e0-429c-b518-54b03d372753",
+                  "parentUUID": "d30c8ad2-7aa8-486c-a6bc-079724d2f76c",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "d50a244d-c85d-4dbc-982b-5fe960fc0f05",
+                "1d39ec2d-56e0-429c-b518-54b03d372753"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 33,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "bede0c43-b560-45a3-94d7-a228142f0372",
+              "title": "PDX Admin User - My Products",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "My products should be enabled ",
+                  "fullTitle": "PDX Header verification - Data Admin user PDX Admin User - My Products My products should be enabled ",
+                  "timedOut": null,
+                  "duration": 22,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "__awaiter(void 0, void 0, void 0, function* () {\n            Header_1.headerMenu.productsWithSubMenu().should('be.visible');\n        })",
+                  "err": {},
+                  "uuid": "62e80126-eae0-4365-8342-bb110f5b6e65",
+                  "parentUUID": "bede0c43-b560-45a3-94d7-a228142f0372",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Link Text displayed should be as My Products",
+                  "fullTitle": "PDX Header verification - Data Admin user PDX Admin User - My Products Link Text displayed should be as My Products",
+                  "timedOut": null,
+                  "duration": 16,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "__awaiter(void 0, void 0, void 0, function* () {\n            Header_1.headerMenu.productsWithSubMenu().should('have.text', 'My Products');\n        })",
+                  "err": {},
+                  "uuid": "ba64825e-5f8d-4200-bd0f-1e175e75fccc",
+                  "parentUUID": "bede0c43-b560-45a3-94d7-a228142f0372",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [
+                {
+                  "uuid": "331c6235-7b5b-48f3-b02f-5b2369b90081",
+                  "title": "PDX Admin User - My Products Sub Menu",
+                  "fullFile": "",
+                  "file": "",
+                  "beforeHooks": [],
+                  "afterHooks": [],
+                  "tests": [
+                    {
+                      "title": "My Data Products should be enabled ",
+                      "fullTitle": "PDX Header verification - Data Admin user PDX Admin User - My Products PDX Admin User - My Products Sub Menu My Data Products should be enabled ",
+                      "timedOut": null,
+                      "duration": 236,
+                      "state": "passed",
+                      "speed": "slow",
+                      "pass": true,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "__awaiter(void 0, void 0, void 0, function* () {\n                Header_1.headerMenu.myProducts().should('be.visible');\n                Header_1.headerMenu.myProducts().should('have.text', 'My Data Products');\n            })",
+                      "err": {},
+                      "uuid": "7dba604c-88f1-4c25-b71f-e34559b20541",
+                      "parentUUID": "331c6235-7b5b-48f3-b02f-5b2369b90081",
+                      "isHook": false,
+                      "skipped": false
+                    },
+                    {
+                      "title": "My Software  Products should be enabled ",
+                      "fullTitle": "PDX Header verification - Data Admin user PDX Admin User - My Products PDX Admin User - My Products Sub Menu My Software  Products should be enabled ",
+                      "timedOut": null,
+                      "duration": 27,
+                      "state": "passed",
+                      "speed": "fast",
+                      "pass": true,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "__awaiter(void 0, void 0, void 0, function* () {\n                Header_1.headerMenu.mySoftwareProducts().should('be.visible');\n                Header_1.headerMenu.mySoftwareProducts().should('have.text', 'My Software Products');\n            })",
+                      "err": {},
+                      "uuid": "5fdf0eb2-d63f-4707-81c5-48516855a60c",
+                      "parentUUID": "331c6235-7b5b-48f3-b02f-5b2369b90081",
+                      "isHook": false,
+                      "skipped": false
+                    }
+                  ],
+                  "suites": [],
+                  "passes": [
+                    "7dba604c-88f1-4c25-b71f-e34559b20541",
+                    "5fdf0eb2-d63f-4707-81c5-48516855a60c"
+                  ],
+                  "failures": [],
+                  "pending": [],
+                  "skipped": [],
+                  "duration": 263,
+                  "root": false,
+                  "rootEmpty": false,
+                  "_timeout": 2000
+                }
+              ],
+              "passes": [
+                "62e80126-eae0-4365-8342-bb110f5b6e65",
+                "ba64825e-5f8d-4200-bd0f-1e175e75fccc"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 38,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "2cb149e5-c080-40d9-b501-d433e2f0578e",
+              "title": "PDX Admin User - Samples",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Samples should be enabled",
+                  "fullTitle": "PDX Header verification - Data Admin user PDX Admin User - Samples Samples should be enabled",
+                  "timedOut": null,
+                  "duration": 28,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "__awaiter(void 0, void 0, void 0, function* () {\n            Header_1.headerMenu.samples().should('be.visible');\n        })",
+                  "err": {},
+                  "uuid": "42928cd7-fb5e-4538-a4d2-16f749acb51a",
+                  "parentUUID": "2cb149e5-c080-40d9-b501-d433e2f0578e",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Link Text displayed should be as Sample Datasets",
+                  "fullTitle": "PDX Header verification - Data Admin user PDX Admin User - Samples Link Text displayed should be as Sample Datasets",
+                  "timedOut": null,
+                  "duration": 16,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "__awaiter(void 0, void 0, void 0, function* () {\n            Header_1.headerMenu.samples().should('have.text', 'Sample Datasets');\n        })",
+                  "err": {},
+                  "uuid": "a2c4f7b9-4a2a-46e3-a7a4-84eeec0b4bf9",
+                  "parentUUID": "2cb149e5-c080-40d9-b501-d433e2f0578e",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [
+                {
+                  "uuid": "90136802-004d-49ed-a761-527b06d86f36",
+                  "title": "Navigation to Samples",
+                  "fullFile": "",
+                  "file": "",
+                  "beforeHooks": [],
+                  "afterHooks": [],
+                  "tests": [
+                    {
+                      "title": "Samples page should be displayed",
+                      "fullTitle": "PDX Header verification - Data Admin user PDX Admin User - Samples Navigation to Samples Samples page should be displayed",
+                      "timedOut": null,
+                      "duration": 129,
+                      "state": "passed",
+                      "speed": "slow",
+                      "pass": true,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "__awaiter(void 0, void 0, void 0, function* () {\n                cy.get('pageHeader').should('have.text', 'Sample Datasets');\n            })",
+                      "err": {},
+                      "uuid": "f4778f8f-759a-4416-8aee-08280ab6d373",
+                      "parentUUID": "90136802-004d-49ed-a761-527b06d86f36",
+                      "isHook": false,
+                      "skipped": false
+                    }
+                  ],
+                  "suites": [],
+                  "passes": [
+                    "f4778f8f-759a-4416-8aee-08280ab6d373"
+                  ],
+                  "failures": [],
+                  "pending": [],
+                  "skipped": [],
+                  "duration": 129,
+                  "root": false,
+                  "rootEmpty": false,
+                  "_timeout": 2000
+                }
+              ],
+              "passes": [
+                "42928cd7-fb5e-4538-a4d2-16f749acb51a",
+                "a2c4f7b9-4a2a-46e3-a7a4-84eeec0b4bf9"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 44,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "0f4896f8-d237-4dff-9f00-5cc269641a06",
+      "title": "",
+      "fullFile": "cypress/integration/PDX_Alogin.ts",
+      "file": "cypress/integration/PDX_Alogin.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "34278d0d-541d-4c85-99ee-f49b583da6f8",
+          "title": "template",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should ",
+              "fullTitle": "template should ",
+              "timedOut": null,
+              "duration": 12160,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect('test').to.equal('test');",
+              "err": {},
+              "uuid": "fab9d283-c497-4e38-a605-2af9b17c3507",
+              "parentUUID": "34278d0d-541d-4c85-99ee-f49b583da6f8",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "fab9d283-c497-4e38-a605-2af9b17c3507"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 12160,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
